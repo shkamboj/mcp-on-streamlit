@@ -31,7 +31,7 @@ class MCPClient:
             logging.info("\nNo MCP servers are defined in config")
             return
         
-        logging(f"\nAttempting to Connect to {len(config['mcpServers'])} servers...")
+        logging.info(f"\nAttempting to Connect to {len(config['mcpServers'])} servers...")
         
         for server_name, server_config in config["mcpServers"].items():
             try:
