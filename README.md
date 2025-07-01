@@ -9,7 +9,7 @@ MCP client integrated within Streamlit UI
 1. `playwright`: Run `DEBUG=pw:mcp* npx @playwright/mcp@latest --host 0.0.0.0 --port 8931 --isolated --headless` from any working directory.
 2. `github`: Run `python server.py` from root directory of mcp-on-streamlit repository.
 
-### Configuration for MCP servers:
+### Configuration for MCP servers: (needs to be placed at root directory with name as servers.json)
 
 ```
 {
