@@ -32,3 +32,22 @@ MCP client integrated within Streamlit UI
 }
 ```
 
+### Citations
+
+@software{mcp_use2025,
+  author = {Zullo, Pietro},
+  title = {MCP-Use: MCP Library for Python},
+  year = {2025},
+  publisher = {GitHub},
+  url = {https://github.com/pietrozullo/mcp-use}
+}
+
+@software{mcp_use2025,
+  author = {Jeremiah Lowin},
+  title = {FastMCP: The fast, Pythonic way to build MCP servers and clients.},
+  year = {2025},
+  publisher = {GitHub},
+  url = {https://github.com/jlowin/fastmcp}
+}
+
+
