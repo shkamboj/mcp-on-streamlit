@@ -6,11 +6,15 @@ MCP client integrated within Streamlit UI
 2. `source .venv/bin/activate` to activate the env.
 3. To run the MCP server: `python server.py`
 4. To run the streamlit app: `streamlit run ui.py`
-5. Demo video path: `demo.mp4` at base path of repo.
+5. Demo video path: https://drive.google.com/file/d/1DKnlZd1fgBxO9m7J2r4qzJ--8ARijN5s/view?usp=sharing
 
 ## MCP servers:
 1. `playwright`: to support navigation of website and search over internet
 2. `github`: to support functionalities around github repo.
+
+
+### Current Challenges:
+Sometimes tools are not being used, LLM trying to generate answer itself. 
 
 ### How to run above given MCP servers:
 1. `playwright`: Run `DEBUG=pw:mcp* npx @playwright/mcp@latest --host 0.0.0.0 --port 8931 --isolated --headless` from any working directory.
