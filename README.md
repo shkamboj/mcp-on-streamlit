@@ -1,6 +1,13 @@
 # mcp-on-streamlit
 MCP client integrated within Streamlit UI
 
+## Setup steps:
+1. `uv sync` to install dependencies in an env.
+2. `source .venv/bin/activate` to activate the env.
+3. To run the MCP server: `python server.py`
+4. To run the streamlit app: `streamlit run ui.py`
+5. Demo video path: `demo.mp4` at base path of repo.
+
 ## MCP servers:
 1. `playwright`: to support navigation of website and search over internet
 2. `github`: to support functionalities around github repo.
