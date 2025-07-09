@@ -66,16 +66,15 @@ if prompt:
     with st.chat_message("user"):
         st.markdown(f"<div class='chat-container user-msg'>{prompt}</div>", unsafe_allow_html=True)
 
-    agent = create_agent()
     with st.chat_message("assistant"):
         with st.spinner("Thinking..."):
             try:
-                response = execute_task(agent, prompt)
+                response = execute_task(prompt, history=st.session_state.chat_history)
             except Exception as e:
                 response = f"❌ Error: {e}"
             st.markdown(f"<div class='chat-container bot-msg'>{response}</div>", unsafe_allow_html=True)
 
-    # Save chat to session
+    # Save to chat history using expected keys for display
     st.session_state.chat_history.append({
         "user": prompt,
         "agent": response
